@@ -92,7 +92,6 @@ header .sales-copy h1 {
 
 main {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 }
 main .contents {
@@ -100,7 +99,6 @@ main .contents {
   flex-direction: column;
 }
 main .advantages {
-    border: 1px solid red;
     text-transform: capitalize;
 }
 main .advantages .box {
@@ -119,14 +117,13 @@ main .advantages .box img {
   max-width: 100%;
   overflow: auto;
 }
-main .advantages .box img .exams {max-width: 3.5rem;}
-main .advantages .box img .fittings {width: 5rem;}
-main .advantages .box img .delivery {width: 5rem;}
+
 
 main .info {
+  width: 100%;
   display: flex;
   align-items: flex-start;
-      border: 1px solid blue;
+  margin-bottom: 5rem;
 }
 main .info .box {
   width: 35%;
@@ -144,4 +141,25 @@ main .info h2 {
 main .info p {
   margin-top: 1rem;
   line-height: 1.4;
+}
+
+
+
+footer {
+  display: flex;
+  justify-content: center;
+    border: 1px solid red;
+}
+footer .copyright{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: calc(960px + 4rem);
+  background-color: azure;
+  padding: 4rem 4rem;
+}
+footer img {
+  height: 1.5rem;
+  width: auto;
+  margin: 0rem 1rem 0rem 0rem;
 }
