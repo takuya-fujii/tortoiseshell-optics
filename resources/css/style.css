@@ -82,8 +82,66 @@ header .sales-copy {
 header .sales-copy h1 {
   font-size: 2rem;
   font-weight: bold;
+  text-transform: uppercase;
   line-height: 1.2;
   background-color: white;
   padding: 1.5rem 5rem;
   margin-top: 10rem;
+}
+
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main .contents {
+  display: flex;
+  flex-direction: column;
+}
+main .advantages {
+    border: 1px solid red;
+    text-transform: capitalize;
+}
+main .advantages .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 8rem;
+  width: 5rem;
+  text-align: center;
+  margin: 3rem 3rem;
+    border: 1px solid red;
+}
+
+main .advantages .box img {
+  height: auto;
+  max-width: 100%;
+  overflow: auto;
+}
+main .advantages .box img .exams {max-width: 3.5rem;}
+main .advantages .box img .fittings {width: 5rem;}
+main .advantages .box img .delivery {width: 5rem;}
+
+main .info {
+  display: flex;
+  align-items: flex-start;
+      border: 1px solid blue;
+}
+main .info .box {
+  width: 35%;
+  margin: 0% 2.5%;
+}
+main .info h2 {
+  width: 10rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  background-color: cadetblue;
+  padding: 0.5rem 0rem 0.5rem 1.25rem;
+}
+main .info p {
+  margin-top: 1rem;
+  line-height: 1.4;
 }
