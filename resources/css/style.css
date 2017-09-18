@@ -1,0 +1,89 @@
+/*
+$screen-large: 960px;
+$screen-medium: 470px;
+$screen-small: 230px;
+
+/* Breakpoints
+$bp-tablet: 1024px;
+$bp-mobile: 470px;
+*/
+
+
+html {
+  font-style: helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.container-space-between {
+  display: flex;
+  width: 960px;   /*画面サイズに応じて変更*/
+  justify-content: space-between;
+  align-items: center;
+}
+.container-align-center {
+  display: flex;
+  width: 960px;   /*画面サイズに応じて変更*/
+  justify-content: center;
+  align-items: center;
+}
+.container-align-left {
+  display: flex;
+  width: 960px;   /*画面サイズに応じて変更*/
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  height: 31rem;
+  justify-content: center;
+  align-content: flex-start;
+  background-image: url("../images/glasses-bg.png");
+  background-size: cover;
+}
+header .container-align-center {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  width: calc(960px + 4rem);
+  margin-top: 1rem;
+}
+header .head-banner {
+  width: 960px;
+  align-items: center;
+  font-size: 1rem;
+  color: white;
+  background-color: cadetblue;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+}
+header .head-banner img {
+  height: 1.5rem;
+  width: auto;
+  margin: 0rem 1rem 0rem 2rem;
+}
+header .head-banner nav {
+  padding: 1rem 1rem;
+}
+header .head-banner nav span {
+  padding: 0rem 1rem;
+}
+header .sales-copy {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+header .sales-copy h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+  background-color: white;
+  padding: 1.5rem 5rem;
+  margin-top: 10rem;
+}
