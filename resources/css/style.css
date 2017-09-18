@@ -176,6 +176,8 @@ footer img {
   .container-space-between, .container-align-center, .container-align-left, header .container-align-center, footer .copyright {
     width: 100%;
   }
+  header .head-banner nav.screen-large, header .head-banner nav.screen-medium {display: flex;}
+  header .head-banner nav.screen-small {display: none;}
 
   header .container-align-center {
     margin-top: 0rem;
