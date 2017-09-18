@@ -105,17 +105,22 @@ main .advantages .box {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   height: 8rem;
   width: 5rem;
   text-align: center;
   margin: 3rem 3rem;
-    border: 1px solid red;
 }
+
 
 main .advantages .box img {
   height: auto;
   max-width: 100%;
+  margin: auto;
   overflow: auto;
+}
+main .advantages .exams {
+  width: 3.5rem;
 }
 
 
@@ -148,9 +153,8 @@ main .info p {
 footer {
   display: flex;
   justify-content: center;
-    border: 1px solid red;
 }
-footer .copyright{
+footer .copyright {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -162,4 +166,83 @@ footer img {
   height: 1.5rem;
   width: auto;
   margin: 0rem 1rem 0rem 0rem;
+}
+
+@media only screen and (min-width: 961px) {
+  header .head-banner nav.screen-large, header .head-banner nav.screen-medium {display: flex;}
+  header .head-banner nav.screen-small {display: none;}
+}
+@media only screen and (max-width: 960px) {
+  .container-space-between, .container-align-center, .container-align-left, header .container-align-center, footer .copyright {
+    width: 100%;
+  }
+
+  header .container-align-center {
+    margin-top: 0rem;
+  }
+  header {
+    height: 22rem;
+    width: 100%;
+  }
+  header .sales-copy h1 {
+    font-size: 1.33rem;
+    padding: 0.75rem 4rem;
+    margin: 5rem 2rem 0rem 0rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  header {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  header .head-banner nav.screen-large, header .head-banner nav.screen-medium, footer .copyright span {display: none;}
+  header .head-banner nav.screen-small {display: flex;}
+
+  header .sales-copy {
+    text-align: center;
+  }
+  header .sales-copy h1 {
+    width: 100%;
+    font-size: 1rem;
+    padding: 1rem 0rem;
+    margin: 9rem 0rem 0rem 0rem;
+  }
+  main .advantages {
+    flex-direction: column;
+    margin: 3.77rem 0rem;
+  }
+  main .advantages .box {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+    width: 5rem;
+    text-align: center;
+    font-size: 0.77rem;
+    margin: 0.77rem 3rem;
+  }
+  main .info .box {
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0rem 0rem 4rem 0rem;
+  }
+  main .info {
+    flex-wrap: wrap;
+    width: 100%;
+
+    margin-bottom: 0rem;
+  }
+  main .info .box h2 {
+    width: 100%;
+    text-align: center;
+  }
+  main .info .box p {
+    font-size: 0.77rem;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  footer .copyright {
+    justify-content: center;
+  }
 }
